@@ -28,7 +28,12 @@
           <% } else {   %> 
          
 
-        <a href="/user/cart" class="btn"><i class="fas fa-shopping-cart"></i></a>
+        <a href="/user/cart" class="btn"><i class="fas fa-shopping-cart"></i>
+          <!-- this is to show the cart counter -->
+          <%if(currentUser.cart.length){%>
+            <sup><span class="badge bg-danger"><%=currentUser.cart.length%></span></sup> 
+            <%}%>
+        </a>
         <a href="/logout" class="btn btn-warning" style="margin-left: 6px;">Logout</a>
          
         
