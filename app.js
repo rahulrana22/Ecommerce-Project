@@ -123,6 +123,7 @@ app.get("/",(req,res)=>
 })
 
 
+//GLOBALLY AVAILABLE TO FRONTEND
 // making some information globally available to our templates(frontend)
 app.use((req,res,next )=> { 
    // when we set something in the locals property it is globally available to our front end and it persists until the lifetime of that request
